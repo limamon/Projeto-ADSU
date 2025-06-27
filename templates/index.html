@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Aulas</title>
+</head>
+<body>
+    <h2>Buscar Aulas</h2>
+    <input id="codigo" placeholder="Código (ex: 03559)">
+    <input id="turma" placeholder="Turma (ex: 1)">
+    <button onclick="buscar()">Buscar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function buscar() {
+            const codigo = document.getElementById('codigo').value;
+            const turma = document.getElementById('turma').value;
+
+            fetch(`/api/aula?codigo=${codigo}&turma=${turma}`)
+                .then(r => r.json())
+                .then(data => {
+                    if (data.erro) {
+                        document.getElementById('resultado').innerText = data.erro;
+                        return;
+                    }
+
+                    let texto = `📘 ${data.disciplina}\n👨‍🏫 ${data.professor}\n\n📅 Aulas:\n`;
+                    data.aulas.forEach(a => {
+                        texto += `- ${a.dia}: ${a.horarios.join(', ')} - Sala: ${a.sala}\n`;
+                    });
+
+                    document.getElementById('resultado').innerText = texto;
+                });
+        }
+    </script>
+</body>
+</html>

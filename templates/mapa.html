@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Salas - UERJ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        #mapa-container {
+            position: relative;
+            width: 512px;
+        }
+        #mapa {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        .pin {
+            position: absolute;
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 4px;
+            transform: translate(-50%, -100%);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 20px;
+            width: 300px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Buscar disciplina no mapa</h2>
+    <input type="text" id="busca" placeholder="Digite o nome da disciplina...">
+
+    <div id="mapa-container">
+        <img id="mapa" src="{{ url_for('static', filename='plantaDESC.png') }}" alt="Mapa das salas">
+    </div>
+
+    <script>
+    const coordenadasSalas = {
+        "5023-D": { x: 810, y: 600 },
+        "5029-D": { x: 810, y: 915 },
+        "5032-D": { x: 210, y: 1210 },
+        "5022-D": { x: 210, y: 600 },
+        "5028-D": { x: 210, y: 915 },
+        "5033-D": { x: 810, y: 1210 },
+    };
+
+    document.getElementById("busca").addEventListener("input", function () {
+        document.querySelectorAll(".pin").forEach(e => e.remove());
+
+        const termo = this.value.trim().toLowerCase();
+        if (!termo) return;
+
+        fetch(`/api/busca_por_nome?nome=${encodeURIComponent(termo)}`)
+        .then(res => res.json())
+        .then(data => {
+            if (!data.aulas) return;
+
+            const salas = [...new Set(data.aulas.map(a => a.sala))];
+            salas.forEach(sala => {
+            const coord = coordenadasSalas[sala?.trim()];
+            if (coord) {
+                const img = document.getElementById("mapa");
+                const escalaX = img.clientWidth / img.naturalWidth;
+                const escalaY = img.clientHeight / img.naturalHeight;
+
+                const pin = document.createElement("div");
+                pin.className = "pin";
+                pin.textContent = data.codigo;
+                pin.style.left = (coord.x * escalaX) + "px";
+                pin.style.top = (coord.y * escalaY) + "px";
+                document.getElementById("mapa-container").appendChild(pin);
+            }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+

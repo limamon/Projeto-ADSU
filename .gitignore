@@ -1,0 +1,18 @@
+# Evita subir credenciais
+.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual (ex: venv, guppe)
+venv/
+guppe/
+*.env/
+
+# Arquivos do VSCode (opcional)
+.vscode/
+
+# Pasta de build ou deploy
+__build__/
+dist/

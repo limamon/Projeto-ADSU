@@ -1,0 +1,178 @@
+[
+  {
+    "codigo": "03559",
+    "disciplina": "Algoritmos Computacionais",
+    "turma": "1",
+    "professor": "Giomar Oliver Sequeiros Olivera",
+    "horario": "seg m3 m4 m5 sex m1 m2",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "03713",
+    "disciplina": "Análise De Algoritmos",
+    "turma": "1",
+    "professor": "Gabriel Cardoso de Carvalho",
+    "horario": "qui t2 t3 sex m1 m2",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "04119",
+    "disciplina": "Arquitetura De Computadores I",
+    "turma": "1",
+    "professor": "Luiza de Macedo Mourelle",
+    "horario": "seg t3 t4 t5 qua t4 t5",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "04664",
+    "disciplina": "Arquitetura De Sistemas Operacionais",
+    "turma": "1",
+    "professor": "Rafaela Correia Brum",
+    "horario": "ter m3 m4 qua m1 m2",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "03980",
+    "disciplina": "Características Das Linguagens De Programação I",
+    "turma": "1",
+    "professor": "Gabriel Cardoso de Carvalho",
+    "horario": "ter t1 t2 sex t4 t5",
+    "sala": "5023-D 5029-D"
+  },
+  {
+    "codigo": "05080",
+    "disciplina": "Controle De Processos Por Computador",
+    "turma": "1",
+    "professor": "Luigi Maciel Ribeiro",
+    "horario": "ter t3 t4 sex n1 t5 t6",
+    "sala": "5032-D"
+  },
+  {
+    "codigo": "04243",
+    "disciplina": "Engenharia De Sistemas A",
+    "turma": "1",
+    "professor": "Silas Pereira Lima Filho",
+    "horario": "seg t1 t2 sex t1 t2",
+    "sala": "5029-D"
+  },
+  {
+    "codigo": "04314",
+    "disciplina": "Engenharia de Sistemas B",
+    "turma": "1",
+    "professor": "Silas Pereira Lima Filho",
+    "horario": "ter m5 m6 sex m3 m4",
+    "sala": "5023-D 5029-D"
+  },
+  {
+    "codigo": "04386",
+    "disciplina": "Engenharia de Sistemas C",
+    "turma": "1",
+    "professor": "Margareth Gonçalves Simões",
+    "horario": "seg n1 t6 qua n1 t6 ter m1 m2",
+    "sala": "5029-D 5029-D"
+  },
+  {
+    "codigo": "03648",
+    "disciplina": "Estruturas De Informação I",
+    "turma": "1",
+    "professor": "João Araújo Ribeiro",
+    "horario": "qui t2 t3 sex t2 t3",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "03787",
+    "disciplina": "Fundamentos De Computadores Digitais I",
+    "turma": "1",
+    "professor": "Felipe Cassemiro Ulrichsen",
+    "horario": "seg m6 t1 sex m3 m4 m5",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "03860",
+    "disciplina": "Instalações de Ambiente Computacional",
+    "turma": "1",
+    "professor": "Thiago Medeiros Carvalho",
+    "horario": "qua m4 m5 m6",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "04049",
+    "disciplina": "Laboratório De Programação I",
+    "turma": "1",
+    "professor": "João Araújo Ribeiro",
+    "horario": "qui t4 t5 sex t4 t5",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "04192",
+    "disciplina": "Microcomputadores E Microprocessadores I",
+    "turma": "1",
+    "professor": "Rafaela Correia Brum",
+    "horario": "ter t3 t4 qua t1 t2 t3",
+    "sala": "5023-D"
+  },
+  {
+    "codigo": "04832",
+    "disciplina": "Projeto De Ambiente Computacional",
+    "turma": "1",
+    "professor": "Thiago Medeiros Carvalho",
+    "horario": "seg m1 m2 m3",
+    "sala": "5029-D"
+  },
+  {
+    "codigo": "04578",
+    "disciplina": "Projeto De Graduação XI-A",
+    "turma": "1",
+    "professor": "Simone Ingrid Monteiro Gama",
+    "horario": "qui m2 m3 m4",
+    "sala": "5029-D"
+  },
+  {
+    "codigo": "04635",
+    "disciplina": "Projeto De Graduação XI-B",
+    "turma": "1",
+    "professor": "Giomar Oliver Sequeiros Olivera",
+    "horario": "qui t3 t4 t5",
+    "sala": "5032-D"
+  },
+  {
+    "codigo": "04718",
+    "disciplina": "Teleprocessamento E Redes De Computadores",
+    "turma": "1",
+    "professor": "Robert Mota Oliveira",
+    "horario": "seg m4 m5 m6 sex m1 m2",
+    "sala": "5032-D"
+  },
+  {
+    "codigo": "04516",
+    "disciplina": "Teoria De Compiladores",
+    "turma": "1",
+    "professor": "Simone Ingrid Monteiro Gama",
+    "horario": "qua m3 m4 m5 qui m5 m6",
+    "sala": "5029-D"
+  },
+  {
+    "codigo": "04889",
+    "disciplina": "Tópicos Especiais Em Sistemas de Computação A",
+    "turma": "1",
+    "professor": "Thiago Medeiros Carvalho",
+    "horario": "seg t1 t2 qua t3 t4",
+    "sala": "5032-D"
+  },
+  {
+    "codigo": "04939",
+    "disciplina": "Tópicos Especiais Em Sistemas de Computação B",
+    "turma": "1",
+    "professor": "Felipe Cassemiro Ulrichsen",
+    "horario": "seg t3 t4 sex t1 t2",
+    "sala": "5032-D"
+  },
+  {
+    "codigo": "04990",
+    "disciplina": "Tópicos Especiais Em Sistemas de Computação C",
+    "turma": "1",
+    "professor": "Luigi Maciel Ribeiro",
+    "horario": "ter t1 t2 sex t3 t4",
+    "sala": "5032-D"
+  }
+]
