@@ -11,7 +11,7 @@ Este é um sistema web feito com Flask e MongoDB que permite visualizar as aulas
 - MongoDB Atlas
 - HTML/CSS/JS
 - PyMuPDF + PDF to JSON
-- Render.com (deploy opcional)
+- Render.com
 
 ---
 
