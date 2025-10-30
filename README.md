@@ -20,5 +20,5 @@ Este é um sistema web feito com Flask e MongoDB que permite visualizar as aulas
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seuusuario/projeto-asdu.git
+git clone https://github.com/limamon/projeto-asdu.git
 cd projeto-asdu
